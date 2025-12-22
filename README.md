@@ -145,4 +145,4 @@ Further details are documented in:
 
 **Phemelo Sebopelo**  
 BSc Information Technology Graduate  
-Data Analytics | SQL | Power BI | Excel
+Data Analytics | SQL| Excel | Power BI 
