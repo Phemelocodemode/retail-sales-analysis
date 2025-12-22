@@ -1,62 +1,148 @@
-📊 Retail Sales Analysis – End-to-End Data Analytics Project
-🔍 Project Overview
+# Retail Sales Data Analysis – VistaCart
 
-Analyzed retail sales data (8,000+ records) to uncover insights related to store performance, product preferences, and sales drivers. The goal was to support data-driven decision-making for inventory management, store layout optimization, and location strategy.
+## 📌 Project Overview
 
-🗂 Dataset
+This project presents an end-to-end retail sales analysis for a fictional company, **VistaCart**, using SQL, Excel, and Power BI. The objective was to transform raw transactional data into meaningful business insights that support decision-making around sales performance, product strategy, and outlet optimization.
 
-Retail sales dataset with product, store, and sales attributes
+The analysis focuses on understanding sales trends, identifying top-performing products and outlets, and uncovering operational factors that influence revenue and customer satisfaction.
 
-Features include item type, fat content, store size, location, visibility, ratings, and sales revenue
+---
 
-🧹 Data Cleaning (SQL)
+## 🎯 Business Objectives
 
-Standardized categorical values (e.g., fat content labels)
+Key objectives of this analysis include:
 
-Removed duplicate records
+- Evaluating overall sales performance using key metrics
+- Identifying top-performing outlets and product categories
+- Analyzing sales variation by outlet type, size, and location
+- Understanding the relationship between item visibility, ratings, and sales
+- Providing insights to support inventory planning and outlet strategy
 
-Ensured consistency across product and store identifiers
+---
 
-📈 Analysis & Key Insights
+## 🗂️ Data Description
 
-Large outlets in prime locations generated the highest sales
+The dataset represents retail sales transactions and includes the following attributes:
 
-High-fat / regular products outperformed low-fat alternatives
+- Item details (type, fat content, visibility, weight)
+- Outlet characteristics (type, size, location, establishment year)
+- Sales values and customer ratings
 
-Older stores showed stronger performance, suggesting customer loyalty effects
+The raw dataset was cleaned and transformed into an analysis-ready table using SQL.
 
-Products with higher shelf visibility sold significantly more
+---
 
-Sales trends varied across establishment years
+## 🧹 Data Cleaning & Preparation
 
-📊 Dashboard
+Data preparation was performed entirely in SQL and included:
 
-Interactive dashboards built to visualize:
+- Handling missing values (e.g. item weight)
+- Removing duplicate records
+- Standardizing categorical variables (e.g. item fat content)
+- Trimming inconsistent text values
+- Validating data integrity before analysis
 
-Total and average sales
+All data cleaning logic is documented in:
 
-Store performance by size and location
+```
 
-Product category contributions
+/sql/01_data_cleaning.sql
 
-Sales trends over time
+```
 
-(Power BI screenshots / link here)
+---
 
-💡 Recommendations
+## 📊 Exploratory Data Analysis
 
-Focus expansion on high-performing store formats and locations
+Exploratory analysis was conducted to understand dataset structure and performance drivers, including:
 
-Improve product visibility to drive short-term sales uplift
+- Total sales, average sales, and number of items
+- Distribution of sales across outlet types, sizes, and locations
+- Product category performance
+- Item visibility and rating patterns
 
-Promote high-margin product categories
+Relevant queries are documented in:
 
-Invest in customer loyalty for new stores
+```
 
-🛠 Tools Used
+/sql/02_exploratory_analysis.sql
 
-SQL (data cleaning & analysis)
+```
 
-Excel / Power Query (data preparation)
+---
 
-Power BI (dashboarding & visualization)
+## 📈 Business Analysis & Key Insights
+
+The project answers several business questions, such as:
+
+- Which outlets generate the highest total sales?
+- What are the top-selling product categories by revenue?
+- How does sales performance vary by outlet type and size?
+- Is there a relationship between item visibility and sales?
+- How do customer ratings differ across outlet types?
+
+Key insights include:
+
+- Medium and large outlets contribute a significant share of total revenue
+- Certain product categories consistently outperform others
+- Item visibility shows a measurable relationship with average sales
+- Outlet location type influences both sales and ratings
+
+All business queries are documented in:
+
+```
+
+/sql/03_business_questions.sql
+
+```
+
+---
+
+## 📊 Dashboard & Visualization
+
+An interactive Power BI dashboard was created to communicate insights effectively. The dashboard highlights:
+
+- Key KPIs (Total Sales, Average Sales, Item Count, Average Rating)
+- Sales by outlet type, size, and location
+- Top-performing items and outlets
+- Product category and rating insights
+
+Dashboard file and screenshots can be found in:
+
+```
+
+/dashboards/
+
+```
+
+---
+
+## 🛠️ Tools & Technologies
+
+- **SQL** – Data cleaning, exploration, and analysis
+- **Excel** – Data inspection and validation
+- **Power BI** – Dashboarding and visualization
+
+---
+
+## ⚠️ Assumptions & Limitations
+
+- The dataset represents simulated retail operations
+- Analysis is based on historical transactional data
+- Findings are descriptive and do not include predictive modeling
+
+Further details are documented in:
+
+```
+
+/notes/assumptions_and_limitations.md
+
+```
+
+---
+
+## 👤 Author
+
+**Phemelo Sebopelo**  
+BSc Information Technology Graduate  
+Data Analytics | SQL | Power BI | Excel
